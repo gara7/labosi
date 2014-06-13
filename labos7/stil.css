@@ -1,0 +1,215 @@
+
+
+/* Dio koda stila koji se odnosi na cijelu stranicu */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #940C00;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+img { max-width: 100%; }
+
+h1, h2 {
+  color: #00BBD6;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.site-header { 
+  background: #549999; 
+  padding: 0px 0;
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  width: 100%;
+}
+.site-header img{
+width:250px;
+height:100px;
+margin-left: -23px;
+}
+
+.site-footer a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #DB5949;
+  text-decoration: none;
+  font-weight: 400;
+}
+.footer-navigation li {
+  display: inline;
+}
+
+a { color: #549999; }
+a:hover { text-decoration: none; }
+name {color: #000; } 
+
+
+.gray-boxes {
+  margin: 5% auto;
+  margin-top:60px;
+  
+}
+
+.gray-boxes h1{
+color: #009BE3;
+padding-top: 40px;
+padding-left: 33px;
+}
+
+.meni {
+height:1200px;
+background: #549999 ;
+
+margin-left: -6px;
+}
+
+.izbor {
+
+width: 89.1%;
+height:50px;
+/* padding-top:10px; */
+margin-top:15px;
+margin-left: 12px;
+background:#7A0A12 ;
+opacity:0.9;
+}
+
+.izbor a {
+height:40px;
+display:block;
+text-align:center;
+font-size:20px;
+font-family: 'Open Sans Condensed', sans-serif;
+padding-top: 13px;
+color:#fff;
+text-decoration: none;
+}
+
+.izbor a:hover{
+
+background:#fff;
+opacity:0.8;
+color:#7A0A12 ;
+}
+
+
+.sadrzaj {
+height:1200px;
+border-style:ridge;
+border-width:2px;
+padding-left:12px;
+color: white;
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.sadrzaj p
+{
+color:white;
+font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.sadrzaj a{
+color:white;
+font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.sidro {
+margin:3px;
+background:red;
+height:50px;
+/* width:60px; */
+background:#7A0A12 ;
+opacity:0.9;
+}
+
+
+.sidro a {
+height:50px;
+display:block;
+text-align:center;
+font-size:20px;
+font-family: 'Open Sans Condensed', sans-serif;
+padding-top: 13px;
+color:#fff;
+text-decoration: none;
+}
+
+.sidro a:hover{
+
+background:#fff;
+opacity:0.8;
+color:#7A0A12 ;
+}
+
+.site-footer p
+{
+
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.izborni{
+height:100px;
+}
+
+
+.korisnik{
+
+/* width:300px; */
+height:50px;
+float:right;
+padding-top: 23px;
+}
+
+.korisnik h2{
+text-align:right;
+padding-right: 10px;
+color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.gumb {
+float:right;
+height:50px;
+padding-top: 23px;
+}
+
+.bttn{
+background:#940C00;
+height:50px;
+width:100%;
+font-size:16px;
+font-family: 'Open Sans Condensed', sans-serif;
+color:#fff;
+}
+
+
+
+.forma {
+
+margin-left:150px;
+}
+
+
+
+
+
+.site-footer {
+  margin-top: 20px;
+	text-align: center;
+	padding: 10px;
+	background: #549999;
+}
+
+.site-footer ul {
+  padding: 0;
+}
+
+@media only screen and (max-width:780px) {
+  .column { width: 100%; margin: 0; padding: 0 10px; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+#reklama
+{
+  z-index:50;
+}

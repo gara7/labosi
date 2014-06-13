@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>ZKD</title>
+
+  <!-- Učitavanje stilskih datoteka -->
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="grid.css" />
+  <link rel="stylesheet" href="stil.css" />
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+  <header class="site-header">
+     <div class="row">
+         <img src="images/logo.png">
+   
+         <div class="gumb column column-2">
+	        <a href="login.html"><button type="button" class="bttn" >Odjava</button></a>
+	     </div>
+		 
+         <div class="korisnik column column-3">
+	     
+    		 <h2>  
+                 
+				   <?php  
+                    session_start();
+                   /*  $ime = $_GET['username']; */
+                    echo $_SESSION['pac'];
+	
+                    ?>
+				  
+			</h2> 
+	     </div>	 
+	
+     </div> 
+  </header>
+
+
+  <section class="gray-boxes row">
+    <div class="meni column column-3">
+      
+	  <div class="izbor column column 2">
+            
+		  <a href="pacijenti.php">Pacijenti</a>
+		
+      </div>
+	  
+	  <div class="izbor column column 2">
+            
+		  <a href="unos.html">Unos</a>
+		
+      </div>
+	  
+	  <div class="izbor column column 2">
+            
+		  <a href="#">Meni</a>
+		
+      </div>
+	  
+	  <div class="izbor column column 2">
+            
+		  <a href="#">Meni</a>
+		
+      </div>
+     
+    </div>
+
+    <div class="sadrzaj column column-9">
+         
+
+          <div class="izborni row">
+		   
+		   <!--  <div class="column column-3">
+			 <form action="pacijenti2.php" method="GET">
+			  Pretraži: <input type="search" name="trazi"><br>
+			  <input type="submit">
+			</form>
+			 
+			</div> -->
+		    <form action="unos.php" method="post">
+            
+
+          <label for="ime">Ime:</label></br>
+          <input id="ime" type="text" name="name" /></br></br>
+		  
+          <label for="prezime">Prezime:</label></br>
+          <input id="prezime" type="text" name="lastname" /></br></br>
+		  
+          <label for="spol">Spol:</label></br></br>
+          <input id="spol" type="radio" name="gen" value="M"/>M
+		  <input id="spol" type="radio" name="gen" value="Ž"/>Ž<br></br>
+
+		  <label for="datum">Datum rođenja: </label></br>
+          <input id="datum" type="checkbox" name="datum" /></br></br>
+		  
+		  <label for="mjesto">Mjesto rođenja:</label></br>
+          <input id="mjesto" type="text" name="mjesto" /></br></br>
+		  
+		  <label for="adresa">Adresa i mjesto stanovanja:</label></br>
+          <input id="adresa" type="text" name="adresa" /></br></br>
+		  
+		  <label for="grupa">Krvna grupa (ako zna):</label></br></br>
+		  <input id="grupa" type="radio" name="krv" value="A"/>A
+          <input id="grupa" type="radio" name="krv" value="B"/>B
+		  <input id="grupa" type="radio" name="krv" value="AB"/>AB
+		  <input id="grupa" type="radio" name="krv" value="0"/>0
+		  <input id="grupa" type="radio" name="krv" value="+"/>+
+		  <input id="grupa" type="radio" name="krv" value="-"/>-</br></br>
+		  
+		  <label for="tegobe">Ima li prijašnjih medicinskih tegoba (srčane tegobe, tlak, virusne bolesti (Hepatits, HIV)):</label></br></br>
+          <input id="tegobe" type="radio" name="tegobe" value="Da"/>Da</br></br>
+		  <input id="tegobe" type="radio" name="tegobe" value="Ne"/>Ne</br></br>
+		  
+		  <label for="kojetegobe">Ako je odgovor na prijašnje pitanje "Da" popuniti: Koje tegobe osoba ima</label></br>
+          <input id="kojetegobe" type="textarea" name="kojetegobe" /></br></br>
+		  
+		  <label for="alergija">Je li osoba alergična na lijekove:</label></br></br>
+          <input id="alergija" type="radio" name="alergija" value="Da"/>Da</br></br>
+		  <input id="alergija" type="radio" name="alergija" value="Ne"/>Ne</br></br>
+		  
+		  <label for="kojaalergija">Ako je odgovor na prijašnje pitanje "Da" popuniti: Na koje lijekove je osoba alergična</label></br>
+          <input id="kojaalergija" type="textarea" name="kojaalergija" /></br></br></br>
+		  
+          <p><input type="submit" value="Posalji" class="InputButton" /></p>
+		  
+        </form>   
+		
+		   
+		  </div>
+		 
+		  
+			   
+		
+	  
+     </div>
+
+  </section>
+
+ 
+
+  <footer class="site-footer">
+  
+	<hr>
+    <p>Copyright &copy; ZKD, 2014</p>
+  </footer>
+  
+</body>
+</html>
